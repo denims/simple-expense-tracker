@@ -15,10 +15,18 @@ cd simple-boot-build-tools
 cd ..
 ```
 
-Clone simple-starter-parent-java: <br>
+Clone simple-boot-parent-java: <br>
 ```
 git clone https://github.com/heartin/simple-boot-parent-java.git
-<cd> simple-boot-parent-java
+cd simple-boot-parent-java
+'./mvnw clean install' or 'mvn clean install'
+cd ..
+```
+
+Clone simple-boot-parent-rest: <br>
+```
+git clone https://github.com/heartin/simple-boot-parent-rest.git
+cd simple-boot-parent-rest
 './mvnw clean install' or 'mvn clean install'
 cd ..
 ```
@@ -29,6 +37,8 @@ git clone https://github.com/heartin/simple-expense-tracker.git
 cd simple-expense-tracker
 './mvnw clean install' or 'mvn clean install'
 ```
+
+Note: If you have forked any of these repositories, clone the forked repository instead of above ones.
 
 ### Accessing H2 Console
 After running the Main class, H2 console can be accessed at: <br>
