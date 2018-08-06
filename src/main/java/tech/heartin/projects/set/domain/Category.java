@@ -2,10 +2,18 @@ package tech.heartin.projects.set.domain;
 
 import java.util.Set;
 
-import javax.persistence.*;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Enumerated;
+import javax.persistence.EnumType;
+
 
 /**
  * Category for an expense.
@@ -23,5 +31,5 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private Set<Expense> expenses;
     @Enumerated(value = EnumType.STRING)
-    GroupOfCategories groupOfCategories;
+    private GroupOfCategories groupOfCategories;
 }
